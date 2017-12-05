@@ -43,3 +43,7 @@ def find_cool(data)
   }
   result
 end
+
+def organize_schools
+
+end

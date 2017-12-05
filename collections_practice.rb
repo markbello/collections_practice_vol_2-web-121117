@@ -46,9 +46,8 @@ end
 
 def organize_schools(schools)
   by_location = {}
-  schools.each{|school, location|
-    binding.pry
-    location = school[:location]
+  schools.each{|school, data|
+    location = data[:location]
     by_location[location].push(school)
   }
   by_location

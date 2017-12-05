@@ -38,7 +38,6 @@ def find_cool(data)
   data.each {|data_hash, idx|
     if data_hash[:temperature] = "cool"
      data_hash
-     binding.pry
     end
   }
 end

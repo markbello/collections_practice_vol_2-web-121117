@@ -36,7 +36,7 @@ end
 
 def find_cool(data)
 
-  data.map {|data_hash|
+  data.each {|data_hash|
     if data_hash[:temperature] == "cool"
      data_hash
     end

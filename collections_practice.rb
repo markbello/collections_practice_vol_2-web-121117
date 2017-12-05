@@ -37,7 +37,6 @@ end
 def find_cool(data)
   data.map {|data_hash, idx|
     if data_hash[:temperature] = "cool"
-      binding.pry
       return data_hash
     end
   }

@@ -50,6 +50,7 @@ def organize_schools(schools)
     location = data[:location]
     if !by_location[location]
       by_location[location] = []
+      by_location[location] << school
     else
       by_location[location].push(school)
     end

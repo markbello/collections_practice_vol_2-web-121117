@@ -35,9 +35,11 @@ def merge_data(keys,data)
 end
 
 def find_cool(data)
+  result = []
   data.each {|data_hash|
     if data_hash[:temperature] = "cool"
-     data_hash
+     result.push(data_hash)
     end
   }
+  result
 end

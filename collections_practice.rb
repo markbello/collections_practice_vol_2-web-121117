@@ -44,6 +44,11 @@ def find_cool(data)
   result
 end
 
-def organize_schools
-
+def organize_schools(schools)
+  by_location = {}
+  schools.each{|school|
+    location = school[:location]
+    by_location[location] << school
+  }
+  by_location
 end
